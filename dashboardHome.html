@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
 <title>Health Dashboard</title>
 <link rel="stylesheet" href="style.css">
 </head>
@@ -62,21 +65,52 @@
         
         <!--This part will be automated by a script when reading from csv file
             Example numbers put in place until script is developed-->
-        <div>
+        <div style="outline:10%;">
             <div id="HeartRateStatsHeader">Average Heart Rate, Beats Per Minute
                 <div style="display:flex">
                     <p style="color:black;font-size:20px;">76 BPM</p>
                 </div>
-                <div id="statBoxes" style="background-color:lightgreen;">Good</div>
+                <div id="statBoxes" style="background-color:lightgreen;color:rgb(63, 151, 63)">Good</div>
             </div>
 
             <hr style="width:225px;">
             <div id="HeartRateStatsHeader" style="margin-top:15px;">Respiratory Rate, Breaths Per Minute
                 <div>
                     <p style="color:black;font-size:20px;">15 BPM</p>
-                    <div id="statBoxes" style="background-color:  rgb(244, 247, 118);">Fair</div>
+                    <div id="statBoxes" style="background-color:  rgba(255, 252, 86, 0.925);color:rgb(180, 165, 24)">Fair</div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div><h1 class="GraphHeader" style="text-align: center;">Last weeks Heart Rate</h1>
+    <canvas id="myChart" style="width:170%;max-width: 900px;padding-left: 30px;padding-top:10px;"></canvas>
+    
+
+        <!--This will be automated once script is created and CSV data points are loaded in-->
+        <div><script>
+            const xValues = [50,60,70,80,90,100,110,120,130,140,150];
+        const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+        new Chart("myChart", {
+            type: "line",
+            data: {
+                labels: xValues,
+                datasets: [{
+                fill: false,
+                lineTension: 0,
+                backgroundColor: "rgba(0,0,255,1.0)",
+                borderColor: "rgba(0,0,255,0.1)",
+                data: yValues
+                }]
+            },
+        options: {
+            legend: {display: false},
+            scales: {
+            yAxes: [{ticks: {min: 6, max:16}}],
+            }
+        }
+    });
+            </script>
         </div>
     </div>
 

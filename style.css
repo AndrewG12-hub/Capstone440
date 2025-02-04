@@ -26,7 +26,7 @@ body{
 .Overview{
     width:400px;
     height:735px;
-    background-color:#f1f1f1;
+    background-color:#ffffff;
 }
 .OverviewHeader{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,4 +62,10 @@ body{
     height:25px;
     border-radius: 15px;
     font-size:17px;
+}
+.GraphHeader{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    padding-left:30px;
+    padding-top:20px;
 }
