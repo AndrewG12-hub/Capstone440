@@ -26,7 +26,7 @@ body{
 .Overview{
     width:400px;
     height:735px;
-    background-color:white;
+    background-color:#f1f1f1;
 }
 .OverviewHeader{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -41,5 +41,25 @@ body{
 .DeviceSelect{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
-    
+}
+.timeInterval{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left:30px; 
+    height:60px;
+}
+#HeartRateStatsHeader{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left:30px;
+    font-size:14px;
+    color:#555;
+    align-items: center;
+}
+#statBoxes{
+    margin-top:13px;
+    margin: 10px;
+    width:70px;
+    text-align:center;
+    height:25px;
+    border-radius: 15px;
+    font-size:17px;
 }

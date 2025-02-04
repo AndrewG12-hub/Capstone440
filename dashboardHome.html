@@ -49,10 +49,38 @@
                     displayedImage.src = this.value;
                 })
             </script>
+        
+        </div>
+        <div class="timeInterval">
+            <Label >Time Interval:</Label>
+            <select name="TimeInterval">
+                <option value="Day">24 Hours</option>
+                <option value="Week">7 Days</option>
+                <option value="Month">Month</option>
+            </select>
+        </div>
+        
+        <!--This part will be automated by a script when reading from csv file
+            Example numbers put in place until script is developed-->
+        <div>
+            <div id="HeartRateStatsHeader">Average Heart Rate, Beats Per Minute
+                <div style="display:flex">
+                    <p style="color:black;font-size:20px;">76 BPM</p>
+                </div>
+                <div id="statBoxes" style="background-color:lightgreen;">Good</div>
+            </div>
+
+            <hr style="width:225px;">
+            <div id="HeartRateStatsHeader" style="margin-top:15px;">Respiratory Rate, Breaths Per Minute
+                <div>
+                    <p style="color:black;font-size:20px;">15 BPM</p>
+                    <div id="statBoxes" style="background-color:  rgb(244, 247, 118);">Fair</div>
+                </div>
+            </div>
         </div>
     </div>
 
-    
+   
 
 </body>
 </html>
