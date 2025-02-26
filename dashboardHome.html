@@ -3,11 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script 
-        src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-    </script>
-<title>Health Dashboard</title>
+
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<title>Health Dashboard</title>
 </head>
 <html lang="EN">
 
@@ -18,13 +23,15 @@
         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" alt="logo" style="height:125px;width:200px;">  
         <li class="li1"><a href="dashboardHome.html">Overview</li></a>
-        <li class="li1"><a href="#reports">Reports</li></a>
-        <li class="li1"><a href="#settings">Settings</li></a>
+        <li class="li1"><a href="reports.html">Reports</li></a>
+        <li class="li1"><a href="settings.html">Settings</li></a>
         <li class="li1" style="margin:225% 0px 5% 0px;"><a href="#login/logout">Login/Logout</li></a>  
     </ul>
 
+
     <div class="Overview"><h1 class="OverviewHeader">Overview</h1>
         <div class="OverviewContent"> 
+            <!-- This is the drop down item picker for the device. Once the item is chosen, the image changes to the current device-->
             <label>Choose Current Device: </label>
 
             <select name="Devices" id="image-selector"  class="DeviceSelect">
@@ -56,10 +63,9 @@
         </div>
         <div class="timeInterval">
             <Label >Time Interval:</Label>
-            <select name="TimeInterval">
+            <select name="TimeInterval" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
                 <option value="Day">24 Hours</option>
                 <option value="Week">7 Days</option>
-                <option value="Month">Month</option>
             </select>
         </div>
         
@@ -82,20 +88,97 @@
             </div>
         </div>
     </div>
-    <div><h1 class="GraphHeader" style="text-align: center;">Last weeks Heart Rate</h1>
-    <canvas id="myChart" style="width:170%;max-width: 900px;padding-left: 30px;padding-top:10px;"></canvas>
-    
 
-        <!--This will be automated once script is created and CSV data points are loaded in-->
-        <div><script>
-            const xValues = [50,60,70,80,90,100,110,120,130,140,150];
-        const yValues = [7,8,8,9,9,9,10,11,14,14,15];
+    <!--Chart Code-->
+    <div><h1 class="GraphHeader" style="text-align: center;">Last weeks Heart Rate</h1>
+        
+    <input type="file" id="HomecsvFileInput" accept=".csv">
+    <canvas id="barChart" width ="400" height="200"></canvas>
+    
+    <script>
+        document.getElementById('HomecsvFileInput').addEventListener('change',handFileSelect, false);
+
+        function handFileSelect(event){
+            const file = event.target.files[0];
+    
+            if(file)
+            {
+                const reader = new FileReader(); 
+                reader.onload= function(e){
+                    const csvData = e.target.result;
+                    const parsedData = parseCSV(csvData);
+            drawChart(parsedData);
+        };
+        reader.readAsText(file);
+    }}
+
+
+function parseCSV(data){
+    const lines = data.split('\n');
+    const labels = [];
+    const values = [];
+
+    for(let i =1; i<lines.length;i++){
+        const line = lines[i].split(',');
+        if(line.length >= 2){
+            labels.push(line[0].trim());
+            values.push(parseFloat(line[1]));
+        }
+    }
+    return{labels,values};
+}
+
+function drawChart(data){
+    const ctx = document.getElementById('barChart').getContext('2d');
+    new Chart(ctx,{
+        type:'bar',
+        data:{
+            labels: data.labels,
+                    datasets: [{
+                        label: 'Data from CSV',
+                        data: data.values,
+                        borderColor: 'rgba(0,0,0,1)',
+                        backgroundColor: 'rgba(0,0,0,0.2)',
+                        borderWidth: 1,
+                        
+
+                    }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    y: {
+                        
+                        beginAtZero: false,
+                        title:{
+                            display:true,
+                            text: 'Average Heart Rate'
+                        },
+                        min:50,
+                        max:120,
+                        },
+                     
+                    },
+                    
+                }
+            });
+}
+    </script>
+        <!--This will be automated once script is created and CSV data points are loaded in
+        <div>
+            
+            <script>
+
+            const xValues = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+            const yValues = [95,72,88,60,100,85,91,76,97,66];
+
 
         new Chart("myChart", {
             type: "line",
             data: {
                 labels: xValues,
                 datasets: [{
+                data:yValues,
                 fill: false,
                 lineTension: 0,
                 backgroundColor: "rgba(0,0,255,1.0)",
@@ -106,11 +189,26 @@
         options: {
             legend: {display: false},
             scales: {
-            yAxes: [{ticks: {min: 6, max:16}}],
+            yAxes: [{ticks: {min: 50, max:120}}],
             }
-        }
-    });
+        }    });
             </script>
+        </div>-->
+        <!--Recent Activity and alerts-->
+
+        <div style="width:800px;">
+            <h3 class="ActivityHeaderFormat">Recent Activity</h3>
+            <div style="overflow:auto;height:120px;padding:5px">
+                <div class="ActivityTab">Heart Rate was at 110 BPM at 1:20 P.M. on Wednesday 2/5/2025<i class="material-icons" style="color:red;padding-left:20px;float:right;">warning</i></div>
+                <div class="ActivityTab">Heart Rate was at 90 BPM at 1:17 P.M. on Wednesday 2/5/2025<i class="material-icons" style="color:yellow;padding-left:28px;float:right">error</i></div>
+                <div class="ActivityTab">Heart Rate was at 120 BPM at 1:14 P.M. on Wednesday 2/5/2025<i class="material-icons" style="color:red;padding-left:20px;float:right">warning</i></div>
+                <div class="ActivityTab">Heart Rate was at 88 BPM at 1:10 P.M. on Wednesday 2/5/2025</div>
+                <div class="ActivityTab">Heart Rate was at 72 BPM at 1:06 P.M. on Wednesday 2/5/2025</div>
+                <div class="ActivityTab">Heart Rate was at 63 BPM at 12:56 P.M. on Wednesday 2/5/2025</div>
+                <div class="ActivityTab">Heart Rate was at 61 BPM at 12:50 P.M. on Wednesday 2/5/2025</div>
+                <div class="ActivityTab">Heart Rate was at 62 BPM at 12:46 P.M. on Wednesday 2/5/2025</div>
+
+            </div>
         </div>
     </div>
 
