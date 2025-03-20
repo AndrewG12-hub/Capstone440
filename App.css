@@ -1,0 +1,41 @@
+body{
+  display: flex;
+  height:100vh;
+  margin:0;
+}
+.DashboardSideBar{
+  list-style-type: none;
+    margin:0;
+    height:125;
+    padding:0;
+    width:200px;
+    background-color:#333;
+    color:white;  
+}
+.li1 a{
+  display: block;
+  color:white;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.li1 a:hover{
+  background-color: #555;
+  color:white;
+}
+.alertSystem
+{
+  margin: -18% 0px 10% 630px;
+  overflow:auto;
+  background-color: lightgray;
+  padding: 5px;
+}
+.ActivityTab{
+  padding-right:'5px'
+}
+.chatGptDiv{
+  margin: -55% 10px 10% 220px;
+  width: 350px;
+  height: 600px;
+
+}
